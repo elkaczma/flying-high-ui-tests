@@ -10,10 +10,13 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import edu.iis.mto.bdd.cucumber.workflowsteps.AuthenticationWorkFlowSteps;
 import edu.iis.mto.bdd.model.FrequentFlyerMember;
+import net.thucydides.core.annotations.Steps;
 
 public class UserAuthenticationSteps {
 
     private WebDriver driver;
+    
+    @Steps
     private AuthenticationWorkFlowSteps authenticationWorkFlow;
 
     @Before
